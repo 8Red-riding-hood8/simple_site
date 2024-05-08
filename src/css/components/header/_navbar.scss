@@ -3,7 +3,7 @@
 
 .navbar {
     margin-bottom: 134px;
-    &__list {
+    &__list{
         display: flex;
         flex-wrap: wrap;
         -moz-column-gap: 23px;
@@ -14,7 +14,9 @@
             display: none;
             margin-top: 30px;
         }
+
     }
+
     &__link {
         color: $color-black;
         padding: $gap-sm;
@@ -22,7 +24,7 @@
         transition: scale 0.1s;
         letter-spacing: $letter-spacing;
         cursor: pointer;
-        
+
         &--active {
             color: $color-primary;
         }
@@ -45,6 +47,7 @@
         @include md-min {
             display: none;
         }
+
 
         &.active span {
             &:nth-child(1) {
@@ -74,6 +77,7 @@
             left: 0;
             transform: rotate(0deg);
             transition: .25s ease-in-out;
+    
             
             &:nth-child(1) {
                 top: 0;
@@ -84,9 +88,8 @@
             &:nth-child(3) {
                 top: 18px;
             }
+            
         }
-
-
     }
 
 }
