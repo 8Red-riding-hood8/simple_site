@@ -368,6 +368,7 @@ a {
 }
 .navbar__list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   -moz-column-gap: 23px;
   column-gap: 23px;
@@ -377,6 +378,14 @@ a {
   .navbar__list {
     display: none;
     margin-top: 30px;
+  }
+}
+.navbar__list--active {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navbar__list--active {
+    display: flex;
   }
 }
 .navbar__link {

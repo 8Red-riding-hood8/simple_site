@@ -5,22 +5,8 @@ console.log(burger);
 console.log(navbarList);
 
 burger.addEventListener("click", function(){
-    if(navbarList.style.display === "block") 
-        {
-            burger.classList.toggle('active');
-            navbarList.style.display = "none";
-        }else
-        {
-            burger.classList.toggle('active');
-            navbarList.style.display = "block";
-        }
+    burger.classList.toggle("active");
+    navbarList.classList.toggle("navbar__list--active");
 })
-
-// $(document).ready(function () {
-//     $('.navbar__btn').click(function() {
-//         $(this).toggleClass('active');
-//         $('.navbar__list').slideToggle(500);
-//     });
-// });
 
 
